@@ -10,8 +10,10 @@
 
 @implementation HelloWorldViewController
 
+
 - (void)dealloc
 {
+
     [super dealloc];
 }
 
@@ -35,6 +37,7 @@
 
 - (void)viewDidUnload
 {
+
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -44,6 +47,16 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)startReading:(id)sender {
+
+    self.view.backgroundColor = [UIColor blackColor];
+    
+}
+
+- (IBAction)stopReading:(id)sender {
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 @end

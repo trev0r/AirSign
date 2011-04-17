@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface HelloWorldViewController : UIViewController {
-    
+
 }
+
+
+- (IBAction)startReading:(id)sender;
+- (IBAction)stopReading:(id)sender;
 
 @end
