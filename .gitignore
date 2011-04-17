@@ -13,4 +13,5 @@ InfoPlist.h
 #osx noise
 .DS_Store
 profile
-
+#xcode4
+xcuserdata
