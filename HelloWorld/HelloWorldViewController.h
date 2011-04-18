@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelloWorldViewController : UIViewController {
-
+@interface HelloWorldViewController : UIViewController <UIAccelerometerDelegate>
+{
+    BOOL isPaused;
+    UILabel *xaccel;
+    UILabel *zaccel;
+    UILabel *yaccel;
 }
+@property (nonatomic, retain) IBOutlet UILabel *xaccel;
+@property (nonatomic, retain) IBOutlet UILabel *zaccel;
+@property (nonatomic, retain) IBOutlet UILabel *yaccel;
 
 
 - (IBAction)startReading:(id)sender;
